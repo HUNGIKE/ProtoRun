@@ -1,10 +1,5 @@
 grammar ProtoRun;
 
-@header {
-    package benke.antlr.protorun;
-}
-
-
 orexp : andexp ( '||' andexp )*;
 andexp : compareexp ( '&&' compareexp)*;
 
